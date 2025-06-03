@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Brilla Interior - Blog de Desarrollo Personal</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  header {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #d4af37; /* dorado */
+    margin-bottom: 0.3rem;
+    letter-spacing: 2px;
+  }
+
+  header p.subtitle {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+
+  main {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .blog-post {
+    background-color: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.7);
+    flex: 1 1 45%; /* roughly 40% text, 60% images with image inside */
+    display: flex;
+    flex-direction: column;
+    color: #eee;
+    transition: transform 0.3s ease;
+  }
+
+  .blog-post:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.9);
+  }
+
+  .post-image {
+    flex: 0 0 60%;
+    overflow: hidden;
+  }
+
+  .post-image img, 
+  .post-image iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-bottom: 3px solid #d4af37;
+  }
+
+  .post-content {
+    flex: 1 1 40%;
+    padding: 1rem 1.25rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .post-content h2 {
+    margin: 0 0 0.5rem 0;
+    color: #d4af37;
+  }
+
+  .post-content p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #ddd;
+  }
+
+  footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+    border-top: 1px solid #222;
+    padding: 1rem 0;
+    font-style: italic;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    .blog-post {
+      flex: 1 1 100%;
+    }
+    .post-image {
+      flex: unset;
+      height: 200px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Brilla Interior</h1>
+      <p class="subtitle">Tu blog de desarrollo personal para jóvenes que quieren transformar su vida</p>
+    </header>
+    <main>
+      <article class="blog-post">
+        <div class="post-image">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Inspiración y crecimiento personal" />
+        </div>
+        <div class="post-content">
+          <h2>Cultiva tu mente</h2>
+          <p>
+            El desarrollo personal comienza con una mente abierta y motivada. Dedica unos minutos cada día para
+            reflexionar sobre tus metas y sueños.
+          </p>
+        </div>
+      </article>
+
+      <article class="blog-post">
+        <div class="post-image">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/IpCEl2kVCSk" title="Video desarrollo personal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="post-content">
+          <h2>Video Motivacional: Vive tu mejor versión</h2>
+          <p>
+            Mira este video que te inspirará a tomar acción hoy mismo y comenzar el camino hacia tu mejor versión.
+          </p>
+        </div>
+      </article>
+
+      <article class="blog-post">
+        <div class="post-image">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Jóvenes desarrollándose" />
+        </div>
+        <div class="post-content">
+          <h2>Pequeñas acciones, grandes cambios</h2>
+          <p>
+            No subestimes el poder de los pequeños hábitos diarios. La constancia es la clave para un crecimiento real y duradero.
+          </p>
+        </div>
+      </article>
+
+      <article class="blog-post">
+        <div class="post-image">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZXsQAXx_ao0" title="Video de desarrollo personal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="post-content">
+          <h2>Aprende a manejar el estrés</h2>
+          <p>
+            Este video te enseña técnicas simples para controlar el estrés y mantener tu equilibrio emocional día a día.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      Blog hecho por Daniel Salazar de la carrera de mercadotecnia PAO 2
+    </footer>
+  </div>
+</body>
+</html>
+
